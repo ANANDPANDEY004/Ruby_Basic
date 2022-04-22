@@ -1,7 +1,7 @@
 require 'benchmark'
 class Each_with_Index
   def pblm2
-    arr = [1,2,3,4,5,10,11,15,147,859,56,1475]
+    arr = [1,2,3,4,5,10,11,15,147]
     time= Benchmark.measure{
         arr.each_with_index{| element, index | p "#{element} is number #{index} in the array of Index"} 
     }
